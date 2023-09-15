@@ -16,10 +16,10 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
 public class Response {
 
     protected LocalDateTime timeStamp;
-    protected int statusCode;
+    protected Map<?, ?> data;
     protected HttpStatus status;
+    protected int statusCode;
     protected String reason;
     protected String message;
     protected String developerMessage;
-    protected Map<?, ?> data;
 }
